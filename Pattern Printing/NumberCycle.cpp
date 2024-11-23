@@ -2,14 +2,19 @@
 using namespace std;
 int main()
 {
-    int x=4;
-    int p=(2*x)-1,b=x/2;
-    for (int i=1;i<=p;i++){
-        for (int j=1;j<=p;j++)
+    int n,x;
+    cout<<"Enter the outer number : ";
+    cin>>n;
+    int a,b;
+    for (int i=1;i<=2*n-1;i++){
+        for (int j=1;j<=2*n-1;j++)
         {
             int a=i,b=j;
-            cout<<min(i,j);
+            if (a>n) a=2*n-i;
+            if (b>n) b=2*n-j;
+            x=min(a,b);
+            cout<<n-x+1;
         }
-        cout<<endl;
+        cout<<endl; 
     }
 }
