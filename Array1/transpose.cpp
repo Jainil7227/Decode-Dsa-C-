@@ -13,7 +13,6 @@ int main()
     {
         for (int j=0;j<y;j++)
         {
-            cout<<"Enter the "<<(j+1)<<" element of row "<<(i+1)<<" : ";
             cin>>a[i][j];
         }
     }
